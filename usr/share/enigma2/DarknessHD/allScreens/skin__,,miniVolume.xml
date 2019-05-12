@@ -1,0 +1,10 @@
+<skin>
+  <screen name="Volume" position="33,33" size="172,66" title="Volume" backgroundColor="transparent" zPosition="55" flags="wfNoBorder" transparent="0">
+    <widget source="global.CurrentTime" render="DARKVolume2" zPosition="5" position="10,0" size="66,66" alphatest="blend" transparent="1" />
+    <ePixmap name="" pixmap="DarknessHD/volume2/vol_back.png" alphatest="on" zPosition="1" position="0,0" size="172,66" transparent="1" />
+    <widget render="VVolumeText" source="global.CurrentTime" position="72,0" size="100,66" font="LCD; 40" halign="center" valign="center" zPosition="9" foregroundColor="lightgrey3" backgroundColor="tb" transparent="1" />
+  </screen>
+  <screen name="Mute" flags="wfNoBorder" position="33,33" size="172,66" title="Mute" backgroundColor="transparent" transparent="0" zPosition="10">
+    <ePixmap name="" pixmap="DarknessHD/volume2/mute.png" position="0,0" size="172,66" zPosition="2" transparent="1" alphatest="blend" />
+  </screen>
+</skin>  

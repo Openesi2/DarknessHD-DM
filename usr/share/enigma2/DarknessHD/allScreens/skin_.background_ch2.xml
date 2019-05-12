@@ -1,0 +1,22 @@
+<skin>
+  <screen name="ch">
+    <ePixmap position="0,0" size="1280,720" zPosition="-55" pixmap="DarknessHD/e1/ch2.png" alphatest="off" transparent="0" />
+    <widget source="Title" render="Label" position="50,0" size="666,26" font="Console; 20" backgroundColor="tb2" transparent="1" foregroundColor="gr2" />
+    <widget font="LCD; 21" render="Label" position="749,0" size="53,26" source="session.MSNWeather" transparent="1" zPosition="2" halign="center" backgroundColor="tb2" foregroundColor="gr2">
+		<convert type="MSNWeather">temperature_current</convert>
+	</widget>
+    <widget render="MSNWeatherPixmap" alphatest="blend" position="721,0" size="26,26" source="session.MSNWeather" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/DarknessHD/weathericon/,png</convert>
+    </widget>
+	  <widget source="global.CurrentTime" render="Label" position="1154,0" size="100,26" font="Console; 20" valign="center" halign="right" backgroundColor="tb2" transparent="1" foregroundColor="gr2">
+		<convert type="ClockToText">Format:%H:%M</convert>
+	  </widget>
+	  <widget source="global.CurrentTime" render="Label" position="832,0" size="266,26" font="Regular; 16" valign="center" halign="left" backgroundColor="tb2" transparent="1" foregroundColor="gr2">
+		<convert type="ClockToText">Format:%a, %e. %B %Y</convert>
+	  </widget>
+  </screen>
+  <colors>
+    <color name="tb" value="#00000000" />
+    <color name="tb2" value="#001c1e21" />   
+  </colors>
+</skin>

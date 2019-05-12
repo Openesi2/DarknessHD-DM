@@ -1,0 +1,25 @@
+<skin>
+  <screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="ch" />
+	  <panel name="rgyb_source" />
+	  <panel name="list" />
+	  <widget source="Service" render="DARKScrollLabel" position="50,570" size="733,113" zPosition="2" font="Regular; 16" transparent="1" backgroundColor="tb" foregroundColor="g3">
+		<convert type="MovieInfo">ShortDescription</convert>
+	  </widget>
+	  <widget source="Service" render="Label" position="916,473" size="100,26" zPosition="2" font="Regular; 20" halign="left" foregroundColor="blue" transparent="1" backgroundColor="tb2">
+		<convert type="ServiceTime">Duration</convert>
+		<convert type="ClockToText">AsLength</convert>
+	  </widget>
+	  <widget source="Service" render="Label" position="1138,473" size="100,26" zPosition="2" font="Regular; 20" halign="left" foregroundColor="blue" transparent="1" backgroundColor="tb2">
+		<convert type="MovieInfo">FileSize</convert>
+	  </widget>
+	  <widget name="freeDiskSpace" position="851,500" size="386,26" font="Regular; 20" valign="center" halign="left" foregroundColor="g3" transparent="1" backgroundColor="tb" />
+	  <eLabel name="new eLabel" text="TIME :" position="850,473" size="80,26" foregroundColor="lightgrey" font="Regular; 20" transparent="1" backgroundColor="tb2" />
+	  <eLabel name="new eLabel" text="SIZE :" position="1078,473" size="80,26" foregroundColor="lightgrey" font="Regular; 20" transparent="1" backgroundColor="tb2" />
+	  <widget source="Service" render="Picon" position="962,60" zPosition="1" size="146,88" transparent="1" alphatest="blend">
+		<convert type="MovieReference" />
+	  </widget>
+	  <ePixmap zPosition="0" position="952,155" size="172,190" pixmap="DarknessHD/e2/No-Cover.png" backgroundColor="tb" alphatest="blend" transparent="0" />
+	  <widget source="Service" render="Cover" position="887,52" size="306,398" zPosition="2" backgroundColor="tb2" alphatest="on" transparent="1" />
+  </screen>
+</skin>
