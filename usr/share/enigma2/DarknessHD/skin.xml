@@ -2978,6 +2978,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="rgyb_source" />
     <panel name="pig" />
   </screen>
+  
+<!--  
   <screen name="UserInterfacePositioner2" size="1280,720" backgroundColor="tb" title="OSD Adjustment" flags="wfNoBorder">
     <eLabel text="Position Setup" render="Label" position="559,-4" size="266,50" valign="bottom" font="Regular;34" foregroundColor="white" backgroundColor="tb" transparent="1" />
     <ePixmap pixmap="skin_default/testscreen.png" position="0,0" zPosition="-10" size="1280,720" />
@@ -2993,6 +2995,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel name="tb" position="530,-4" size="307,50" backgroundColor="tb" zPosition="-1" />
     <eLabel name="tb" position="310,673" size="659,44" backgroundColor="tb" zPosition="-1" />
   </screen>
+-->  
+<screen name="UserInterfacePositioner2" size="1280,720" backgroundColor="tb" title="OSD Adjustment" flags="wfNoBorder">
+    <eLabel text="Position Setup" render="Label" position="559,0" size="266,50" valign="bottom" font="Regular;34" foregroundColor="white" backgroundColor="tb" transparent="1" />
+    <ePixmap pixmap="DarknessHD/skin_default/testscreen.png" position="0,0" zPosition="-10" size="1280,720" />
+    <widget name="config" position="377,228" zPosition="1" size="534,210" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget source="status" render="Label" position="376,444" zPosition="1" size="533,86" font="Regular;20" halign="center" valign="center" foregroundColor="white" backgroundColor="tb" transparent="1" />
+    <ePixmap pixmap="DarknessHD/buttons/key_red.png" position="316,684" size="23,23" alphatest="blend" />
+    <ePixmap pixmap="DarknessHD/buttons/key_green.png" position="537,684" size="23,23" alphatest="blend" />
+    <ePixmap pixmap="DarknessHD/buttons/key_yellow.png" position="761,684" size="23,23" alphatest="blend" />
+    <widget source="key_red" render="Label" position="346,683" size="170,26" noWrap="1" zPosition="1" valign="center" font="Regular;20" halign="left" backgroundColor="tb" foregroundColor="white" transparent="1" />
+    <widget source="key_green" render="Label" position="568,683" size="170,26" noWrap="1" zPosition="1" valign="center" font="Regular;20" halign="left" backgroundColor="tb" foregroundColor="white" transparent="1" />
+    <widget source="key_yellow" render="Label" position="792,683" size="170,26" noWrap="1" zPosition="1" valign="center" font="Regular;20" halign="left" backgroundColor="tb" foregroundColor="white" transparent="1" />
+    <eLabel name="tb" position="376,227" size="535,303" backgroundColor="tb" zPosition="-1" />
+    <eLabel name="tb" position="530,-4" size="307,50" backgroundColor="tb" zPosition="-1" />
+    <eLabel name="tb" position="310,673" size="659,44" backgroundColor="tb" zPosition="-1" />
+  </screen> 
+  
+  
+  
   <screen name="AutoVideoModeLabel" position="400,53" size="400,60">
     <widget name="content" position="4,3" size="386,26" font="Regular;20" transparent="1" />
     <widget name="restxt" position="4,30" size="386,26" font="Regular;20" transparent="1" />
